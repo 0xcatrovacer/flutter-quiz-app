@@ -17,7 +17,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   var _questionIndex = 0;
 
-  void answerQuestion() {
+  void _answerQuestion() {
     setState(() {
       _questionIndex = 1;
       print("Answer Chosen!");
@@ -37,9 +37,9 @@ class _MyAppState extends State<MyApp> {
         body: Column(
           children: [
             Question(questions[_questionIndex]),
-            Answer(),
-            Answer(),
-            Answer()
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion)
           ],
         ),
       ),
