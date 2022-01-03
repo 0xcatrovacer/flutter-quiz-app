@@ -31,7 +31,11 @@ class Result extends StatelessWidget {
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 36, fontWeight: FontWeight.bold),
           ),
-          ElevatedButton(onPressed: resetHandler, child: Text("Restart Quiz"))
+          TextButton(
+            onPressed: resetHandler,
+            child: Text("Restart Quiz"),
+            style: TextButton.styleFrom(primary: Colors.deepPurple),
+          )
         ],
       ),
     );
